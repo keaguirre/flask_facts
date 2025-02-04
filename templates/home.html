@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keaguirre Dev</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/png" href="https://github.com/keaguirre/portFolio/blob/main/Assets/nail-ico.png?raw=true">
+</head>
+<body class="bg-black">
+    <main class="flex flex-col sm:flex-col md:flex-col lg:flex-row text-center items-center place-content-center mt-1/2 xl:pl-10 2xl:pl-10 md:pl-10 h-screen w-screen"><!--Falta centrar en mobile-->
+        <section class="flex flex-col md:w-5/12">
+            <section class="">
+                <h1 id="construccion" class=" text-white text-3xl 2xl:text-7xl xl:text-7xl lg:text-5xl md:text-5xl sm:text-5xl">API Home HTML Render Test</h1>
+            </section>
+        </section>
+        <img class="md:w-9/12 lg:w-9/12 xl:w-9/12 2xl:w-9/12 h-10/12" src="https://github.com/keaguirre/portFolio/blob/main/Assets/nailsmith.gif?raw=true" alt="">
+    </main>
+    <style>
+        #construccion{
+            font-family: 'Josefin Sans', sans-serif;
+        }
+        .qr{
+            position:absolute;
+            background-color: white;
+        }
+        .qr:hover{
+            opacity: 0;
+        }
+    </style>
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var qrElement = document.getElementById("qr");
+
+        qrElement.addEventListener("mouseenter", function() {
+            this.src = "https://github.com/keaguirre/portFolio/blob/main/Assets/qr-hover.gif?raw=true";
+        });
+
+        qrElement.addEventListener("mouseleave", function() {
+            this.src = "Assets/qr.png";
+        });
+    });
+</script>
+</html>
